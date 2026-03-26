@@ -41,10 +41,68 @@ header nav a{
 #hero-content {
     padding: 60px 100px;
     text-align: center;
+
 }
 
 #hero-content2 {
     text-align: center;
+   
 }
 
 
+
+
+/* citation: claude.com */
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #7A0A0A;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Cinzel', arial, serif;
+    text-transform: uppercase;
+}
+
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #1a1A1A;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #C41E1E;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #1a1a1a;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
