@@ -188,3 +188,6 @@ h2 {
     border-width: 0px 3px 0px 3px; */
 }
 
+#featured_box img {
+    width: 330px;
+}
