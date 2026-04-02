@@ -7,6 +7,7 @@
 
 body {
     font-family: "cinzel", Arial, serif;
+    overflow-x: hidden;
 }
 
 header {
